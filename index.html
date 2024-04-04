@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://demo.templatemonster.com/demo/67167.html -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- linearicons -->
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <!-- fontawsome -->
+  <script src="https://kit.fontawesome.com/9bd2123f7e.js" crossorigin="anonymous"></script>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Jarallax CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.css">
+  <!-- my CSS -->
+  <link rel="stylesheet" href="./dist/style.min.css">
+</head>
+
+<body>
+  <div id="navbar1" class="navbar navbar-expand-lg fixed-top text-bg-transparent">
+    <div class="container-fluid">
+      <div class="navbar-brand order-0">
+        <img src="./img/logo_dark@2x.png" id="logo-dark">
+      </div>
+      <div class="btn-box order-2 order-lg-3">
+        <i class="lnr lnr-magnifier"></i>
+        <i class="lnr lnr-cart position-relative">
+          <span class="badge mybadge position-absolute top-0 start-100 translate-middle text-bg-dark">0</span>
+        </i>
+        <i class="lnr lnr-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"></i>
+        <button id="hbg-black" class="hamburger hamburger--slider-r navbar-toggler" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse order-3 order-lg-2 mt-0 mt-lg-2" id="navbarNavDropdown">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active">Home</a>
+          <a class="nav-link">Pages</a>
+          <a class="nav-link">Shortcodes</a>
+          <a class="nav-link">Portfolios</a>
+          <a class="nav-link">Blogs</a>
+          <a class="nav-link">Shop</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="navbar2" class="navbar navbar-expand-lg fixed-top text-bg-transparent" data-bs-theme="dark">
+    <div class="container-fluid">
+      <div class="navbar-brand order-0">
+        <img src="./img/logo_light@2x.png" id="logo-light">
+      </div>
+      <div class="btn-box order-2 order-lg-3">
+        <i class="lnr lnr-magnifier"></i>
+        <i class="lnr lnr-cart position-relative">
+          <span class="badge mybadge position-absolute top-0 start-100 translate-middle text-bg-light">0</span>
+        </i>
+        <i class="lnr lnr-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"></i>
+        <button id="hbg-white" class="hamburger hamburger--slider-r navbar-toggler" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse order-3 order-lg-2 mt-0 mt-lg-2" id="navbarNavDropdown">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active">Home</a>
+          <a class="nav-link">Pages</a>
+          <a class="nav-link">Shortcodes</a>
+          <a class="nav-link">Portfolios</a>
+          <a class="nav-link">Blogs</a>
+          <a class="nav-link">Shop</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end text-bg-dark p-3" id="offcanvasRight">
+    <div class="offcanvas-header">
+      <div class="img-container">
+        <img src="./img/logo_light@2x.png">
+      </div>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
+        <span class="lnr lnr-cross"></span>
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <p>
+        Clean & Modern Layout, Hazel is packaged with awesome features, unlimited customizability, built-in mega menu,
+        full WooCommerce design integration, and a super clean design, for minimal lovers.
+      </p>
+      <div id="icons" class="d-flex my-5">
+        <div class="circle">
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="circle">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="circle">
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+        <div class="circle">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+      <br>
+      <h4>Our Contacts</h4>
+      <div id="info">
+        <div class="address">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>PO Box 16122 Collins Street West Victoria 8007 Australia</p>
+        </div>
+        <div class="email">
+          <i class="fa-solid fa-envelope"></i>
+          <p>geral@example.com</p>
+        </div>
+        <div class="phone">
+          <i class="fa-solid fa-phone"></i>
+          <p>(+23) 345 322 233</p>
+        </div>
+      </div>
+      <button type="button" class="btn btn-outline-light btn-sm mt-5 px-3 py-2">like hazel&nbsp;<span
+          class="lnr lnr-arrow-right"></span></button>
+    </div>
+  </div>
+
+  <div id="slide" class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div id="left" class="swiper-slide text-center">
+        <div class="img-wrapper">
+          <img src="./img/slide1.jpg">
+        </div>
+        <div class="content">
+          <h6 class="pb-1">A minimalist wordpress theme</h6>
+          <h3 class="my-3 my-lg-4">Welcome to Hazel</h3>
+          <div class="group mt-0 mt-lg-4 p-0 p-lg-3">
+            <button type="button" class="btn btn-outline-dark btn-sm px-3 py-2 px-lg-4 py-lg-2">About Us</button>
+            <span class="mx-2 mx-lg-4">or</span>
+            <button type="button" class="btn btn-outline-dark btn-sm px-3 py-2 px-lg-4 py-lg-2">Contact</button>
+          </div>
+        </div>
+      </div>
+      <div id="right" class="swiper-slide text-center">
+        <div class="img-wrapper">
+          <img src="./img/slide2.jpg">
+        </div>
+        <div class="content">
+          <h6 class="pb-1" style="transform: translate(0px, 30px)">Made with love by treethemes</h6>
+          <h3 class="my-3 my-lg-4">Clean powerful theme</h3>
+          <div class="group mt-0 mt-lg-4 p-0 p-lg-3">
+            <button type="button" class="btn btn-outline-dark btn-sm px-3 py-2 px-lg-4 py-lg-2">About Us</button>
+            <span class="mx-2 mx-lg-4">or</span>
+            <button type="button" class="btn btn-outline-dark btn-sm px-3 py-2 px-lg-4 py-lg-2">Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <div id="feature" class="pad container text-center">
+    <div class="row row-cols-1 row-cols-md-3 gy-5">
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-text-format"></i></div>
+        <p class="box-title">CLEAN DESIGN</p>
+        <p class="box-content">
+          Professionally repurpose premium rather than magnetic bandwidth.
+        </p>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-gift"></i></div>
+        <p class="box-title">PREMIUM RESOURCES</p>
+        <p class="box-content">
+          Professionally repurpose premium rather than magnetic bandwidth.
+        </p>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-laptop-phone"></i></div>
+        <p class="box-title">RESPONSIVE LAYOUT</p>
+        <p class="box-content">
+          Professionally repurpose premium rather than magnetic bandwidth.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="rwd" class="container-fluid">
+    <div class="row row-cols-1 row-cols-lg-2 gy-5">
+      <div class="col">
+        <h3 class="small-title">We work hard</h3>
+        <p class="box-content">
+          Intrinsicly engineer one-to-one partnerships with error-free customer service. Competently optimize
+          goal-oriented technology via low-risk high-yield materials engage.
+        </p>
+        <p class="box-content">
+          Energistically develop client-centered web services without focused data. Conveniently syndicate leveraged
+          scenarios.
+        </p>
+        <button type="button" class="btn btn-outline-dark btn-sm mt-4 px-3 py-2">Outstanding features</button>
+      </div>
+      <div class="col"><img src="./img/mockup2.png"></div>
+    </div>
+  </div>
+
+  <div id="about" class="pad container px-5">
+    <h1>“ What separates design from art is that design is meant to be... functional ”</h1>
+    <p class="box-content mt-4">– Cameron Moll</p>
+    <div class="row row-cols-1 row-cols-md-3 gy-5 mt-5">
+      <div class="col">
+        <h6>OUR VALUES</h6>
+        <p class="box-content">
+          Uniquely create competitive e-markets for backward-compatible technologies. Authoritatively morph efficient
+          networks via bleeding-edge results. Completely drive 24/365 e-markets via quality e-business. Progressively
+          plagiarize enterprise strategic theme areas with ubiquitous sources. Enthusiastically drive team driven
+          processes rather than e-tailers.
+        </p>
+      </div>
+      <div class="col">
+        <h6>OUR MISSION</h6>
+        <p class="box-content">
+          Conveniently maximize standardized web-readiness without integrated products. Competently productivate fully
+          researched results via empowered e-commerce. Quickly repurpose cross-unit methodologies for leading-edge
+          materials. Monotonectally enhance team driven human capital whereas worldwide.
+        </p>
+      </div>
+      <div class="col">
+        <h6>OUR SKILLS</h6>
+        <div id="skill">
+          <div class="bar-group">
+            <span class="bar-name">DEVELOPMENT</span>
+            <div class="bar">
+              <div class="bar-line"><span class="percent">95%</span></div>
+            </div>
+          </div>
+          <div class="bar-group">
+            <span class="bar-name">DESIGN</span>
+            <div class="bar">
+              <div class="bar-line"><span class="percent">85%</span></div>
+            </div>
+          </div>
+          <div class="bar-group">
+            <span class="bar-name">MARKETING</span>
+            <div class="bar">
+              <div class="bar-line"><span class="percent">70%</span></div>
+            </div>
+          </div>
+          <div class="bar-group">
+            <span class="bar-name">CONSULTING</span>
+            <div class="bar">
+              <div class="bar-line"><span class="percent">65%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="achievement" class="jarallax text-center">
+    <img class="jarallax-img" src="./img/backgroung.jpg">
+    <div class="black">
+      <div class="pad container">
+        <h3 class="small-title">Agency Acievement</h3>
+        <div class="row row-cols-1 row-cols-md-4 gy-5">
+          <div class="col">
+            <div class="icon"><i class="lnr lnr-history"></i></div>
+            <div class="counter" id="hour">0</div>
+            <div class="text">HOURS OF WORK</div>
+          </div>
+          <div class="col">
+            <div class="icon"><i class="lnr lnr-rocket"></i></div>
+            <div class="counter" id="finish">0</div>
+            <div class="text">FINISHED WORKS</div>
+          </div>
+          <div class="col">
+            <div class="icon"><i class="lnr lnr-users"></i></div>
+            <div class="counter" id="client">0</div>
+            <div class="text">CLIENTS</div>
+          </div>
+          <div class="col">
+            <div class="icon"><i class="lnr lnr-chart-bars"></i></div>
+            <div class="counter" id="follower">0</div>
+            <div class="text">SOCIAL FOLLOWERS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="service" class="pad container text-center px-5">
+    <h3 class="small-title">Our services</h3>
+    <div class="row row-cols-1 row-cols-md-3 gy-5">
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-diamond"></i></div>
+        <p class="box-title">UNIQUE DESIGN</p>
+        <p class="box-content">
+          Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.
+        </p>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-thumbs-up"></i></div>
+        <p class="box-title">EASY TO WORK</p>
+        <p class="box-content">
+          Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.
+        </p>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-film-play"></i></div>
+        <p class="box-title">UNLIMITED PORTFOLIOS</p>
+        <p class="box-content">
+          Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.
+        </p>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-heart"></i></div>
+        <p class="box-title">PREMIUM RESOURCES</p>
+        <p class="box-content">
+          Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.
+        </p>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-cart"></i></div>
+        <p class="box-title">WOOCOMMERCE READY</p>
+        <p class="box-content">
+          Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.
+        </p>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-star"></i></div>
+        <p class="box-title">FREE SUPPORT</p>
+        <p class="box-content">
+          Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="purchase" class="container-fluid text-center py-5">
+    <h5>Interest on our service?</h5>
+    <button type="button" class="btn btn-outline-light btn-sm mt-2 px-3 py-2">Purchase Hazel</button>
+  </div>
+
+  <div id="work" class="pad container-fluid text-center">
+    <h2 class="title">Our latest work</h2>
+    <div id="subtitle">
+      <a href="#"><span>view all portfolio</span></a>
+    </div>
+    <div id="work-img" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4"></div>
+  </div>
+
+  <div id="client" class="pad container vstack text-center">
+    <h2 class="title">Our client love us</h2>
+    <div id="client-img">
+      <ul>
+        <li>
+          <a href="#client-1">
+            <img src="./img/t1.jpeg">
+          </a>
+        </li>
+        <li>
+          <a href="#client-2">
+            <img src="./img/t2.jpeg">
+          </a>
+        </li>
+        <li>
+          <a href="#client-3">
+            <img src="./img/t3.jpeg">
+          </a>
+        </li>
+        <li>
+          <a href="#client-4">
+            <img src="./img/t4.jpeg">
+          </a>
+        </li>
+        <li>
+          <a href="#client-5">
+            <img src="./img/t5.jpeg">
+          </a>
+        </li>
+        <li>
+          <a href="#client-6">
+            <img src="./img/t6.jpeg">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="client-content">
+      <div id="client-1">
+        <p>
+          Dynamically whiteboard timely models through bricks-and-clicks e-services. Holisticly predominate resource
+          maximizing users through backend leadership skills. Continually mesh team building strategic theme areas
+          without standards compliant users.
+        </p>
+        <span>Jack Moe <br>
+          <a href="#">The Author Co</a>
+        </span>
+      </div>
+      <div id="client-2">
+        <p>
+          Intrinsicly embrace top-line core competencies with real-time metrics. Conveniently reinvent functionalized
+          collaboration. Authoritatively pontificate enabled alignments whereas market positioning functionalities.
+        </p>
+        <span>Maria Doe <br>
+          <a href="#">TreeThemes</a>
+        </span>
+      </div>
+      <div id="client-3">
+        <p>
+          Credibly envisioneer enterprise-wide content before resource maximizing leadership skills. Progressively
+          visualize professional value via distributed value. Efficiently restore adaptive bandwidth through
+          best-of-breed plug-and-play ROI and excellent platforms
+        </p>
+        <span>Soni Marvel <br>
+          <a href="#">Markko</a>
+        </span>
+      </div>
+      <div id="client-4">
+        <p>
+          Compellingly e-enable distributed deliverables whereas customer directed vortals. Objectively pontificate
+          leveraged collaboration and idea-sharing without bleeding-edge resources. Professionally administrate business
+          web services without future-proof catalysts for change. Energistically engage diverse vortals and prospective
+          methods of empowerment. Competently pontificate diverse
+        </p>
+        <span>Jotas Doe <br>
+          <a href="#">Company</a>
+        </span>
+      </div>
+      <div id="client-5">
+        <p>
+          Enthusiastically syndicate inexpensive services and 24/7 bandwidth. Phosfluorescently develop cooperative
+          content vis-a-vis best-of-breed alignments. Competently innovate orthogonal e-tailers via interactive core
+          competencies. Uniquely implement transparent
+        </p>
+        <span>Val Draca <br>
+          <a href="#">Author Company</a>
+        </span>
+      </div>
+      <div id="client-6">
+        <p>
+          Rapidiously integrate multimedia based resources whereas low-risk high-yield technologies. Proactively
+          innovate market positioning products without B2B products. Progressively recaptiualize
+        </p>
+        <span>Maria Lucas <br>
+          <a href="#">TreeThemes</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer" class="pad container-folid vstack text-center">
+    <div>
+      <img src="./img/logo_dark@2x.png">
+    </div>
+    <div id="social-icon">
+      <ul>
+        <li>
+          <a href="#"><i class="fa-brands fa-houzz"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-twitch"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </li>
+        <!-- <li>
+          <a href="#"><i class="fa-brands fa-tripadvisor"></i></a>
+        </li> -->
+        <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+      </ul>
+    </div>
+    <div>
+      <p>Hazel © TreeThemes 2023</p>
+    </div>
+  </div>
+
+  <!-- import -->
+  <script src="./package/bootstrap.bundle.min.js"></script>
+  <script src="./package/jquery-3.7.1.min.js"></script>
+  <script src="./package/gsap.js"></script>
+  <script src="./package/ScrollTrigger.js"></script>
+  <!-- myScript -->
+  <script src="./js/navbar.js"></script>
+  <script src="./js/swiper.js" type="module"></script>
+  <script src="./js/skill.js"></script>
+  <script src="./js/counter.js"></script>
+  <script src="./js/jarallax.js" type="module"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
